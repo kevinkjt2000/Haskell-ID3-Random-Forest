@@ -1,0 +1,28 @@
+CSC 6230  - Machine Learning
+Program 1 - Random Forest
+Author    - Kevin Tindall
+
+This project relies on Haskell. The simplest way of installing Haskell,
+is downloading the Haskell Platform from https://www.haskell.org/platform/
+
+Once Haskell is installed, there are some extra libraries that must be installed.
+The following command should download and install the necessary extra libraries:
+    cabal update && cabal install HTF pretty-tree random-shuffle
+
+The Haskell compiler might say that htfpp could not be located.
+This is because cabal does not add its bin directory to PATH by default.
+Simply add the correct folder to your system's PATH.
+    Linux:   ~/.cabal/bin
+    Mac OSX: ~/Library/Haskell/bin
+    Windows: %APPDATA%\cabal\bin
+
+To compile and run a normal build on Linux and Mac OSX:
+    cabal configure && cabal build
+    dist/build/random_forest/random_forest <number of trees> <data filename>
+
+To compile and run a normal build on Windows:
+    cabal configure && cabal build
+    dist\build\random_forest\random_forest.exe <number of trees> <data filename>
+
+To compile and run a test build:
+    cabal configure --enable-tests && cabal build && cabal test

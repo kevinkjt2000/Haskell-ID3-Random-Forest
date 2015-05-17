@@ -1,0 +1,48 @@
+-- Copyright 2015 Kevin Tindall
+--
+-- Licensed under the Apache License, Version 2.0 (the "License");
+-- you may not use this file except in compliance with the License.
+-- You may obtain a copy of the License at
+--
+--     http://www.apache.org/licenses/LICENSE-2.0
+--
+-- Unless required by applicable law or agreed to in writing, software
+-- distributed under the License is distributed on an "AS IS" BASIS,
+-- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-- See the License for the specific language governing permissions and
+-- limitations under the License.
+
+name:          random-forest
+version:       0.1.0.0
+-- synopsis:      
+-- description:   
+license:       Apache-2.0
+license-file:  LICENSE
+author:        Kevin Tindall
+maintainer:    kjtindall42@students.tntech.edu
+copyright:     (c) 2015 Kevin Tindall
+build-type:    Simple
+cabal-version: >=1.10
+
+executable random_forest
+  main-is:          main.hs
+  build-depends:    base >=4.7 && <4.9,
+                    containers >=0.5.5.1,
+                    HTF >=0.12.2.3,
+                    pretty-tree >=0.1.0.0,
+                    random >=1.0.1.1,
+                    random-shuffle >=0.0.4,
+                    split >=0.2.2
+  default-language: Haskell2010
+
+test-suite random_forest_tests
+  type:             exitcode-stdio-1.0
+  main-is:          TestMain.hs
+  build-depends:    base >=4.7 && <4.9,
+                    containers >=0.5.5.1,
+                    HTF >=0.12.2.3,
+                    pretty-tree >=0.1.0.0,
+                    random >=1.0.1.1,
+                    random-shuffle >=0.0.4,
+                    split >=0.2.2
+  default-language: Haskell2010
