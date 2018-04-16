@@ -14,19 +14,17 @@
 
 name:          random-forest
 version:       0.1.0.0
--- synopsis:      
--- description:   
 license:       Apache-2.0
 license-file:  LICENSE
 author:        Kevin Tindall
-maintainer:    kjtindall42@students.tntech.edu
-copyright:     (c) 2015 Kevin Tindall
+maintainer:    kevinkjt2000@gmail.com
+copyright:     (c) 2018 Kevin Tindall
 build-type:    Simple
 cabal-version: >=1.10
 
 executable random_forest
   main-is:          main.hs
-  build-depends:    base >=4.7 && <4.9,
+  build-depends:    base >=4.7,
                     containers >=0.5.5.1,
                     HTF >=0.12.2.3,
                     pretty-tree >=0.1.0.0,
@@ -38,7 +36,7 @@ executable random_forest
 test-suite random_forest_tests
   type:             exitcode-stdio-1.0
   main-is:          TestMain.hs
-  build-depends:    base >=4.7 && <4.9,
+  build-depends:    base >=4.7,
                     containers >=0.5.5.1,
                     HTF >=0.12.2.3,
                     pretty-tree >=0.1.0.0,
