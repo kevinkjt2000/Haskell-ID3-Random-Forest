@@ -1,0 +1,7 @@
+# https://docs.haskellstack.org/en/stable/yaml_configuration/
+
+resolver: lts-11.5
+packages:
+- .
+extra-deps:
+- https://hub.darcs.net/ivanm/pretty-tree/dist
